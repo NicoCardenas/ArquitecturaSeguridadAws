@@ -66,7 +66,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.escuelaing.arep.aws.AwsApplication</mainClass>
+							<mainClass>com.escuelaing.arep.Heroku.HerokuApplication</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
