@@ -21,6 +21,11 @@ public class mathController {
     mathServices ms;
 
     // ================= Get ================= //
+    @GetMapping("/")
+    public String getRoot(){
+        return "<center><h1>Documentacion: <a href=\"https://github.com/NicoCardenas/ArquitecturaSeguridadAws.git\">Github</a></h1></center>";
+    }
+
     @GetMapping("/sum.{a}&{b}")
     public ResponseEntity<?> getSum(@PathVariable String a, @PathVariable String b) {
         try {
