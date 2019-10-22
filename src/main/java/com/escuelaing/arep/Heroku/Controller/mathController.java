@@ -61,7 +61,7 @@ public class mathController {
         }
     }
 
-    @GetMapping("/square.{a}&{b}")
+    @GetMapping("/square.{a}")
     public ResponseEntity<?> getSquare(@PathVariable String a) {
         try {
             return new ResponseEntity<>(ms.square(Integer.parseInt(a)), HttpStatus.ACCEPTED);
